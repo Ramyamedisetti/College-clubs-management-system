@@ -1,0 +1,199 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    background-image: url(homepage_background.png);
+    background-size: cover; 
+    background-attachment: fixed;
+    font-family: 'Josefin Sans', sans-serif;
+    background-size: 100%;
+    height: 100%;
+}
+
+h2{
+    color: black;
+}
+.link:hover{
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+
+/* navbar */
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    padding-top: 20px;
+    background: white;
+    border: 0;
+}
+header .header-left {
+    display: flex;
+    align-items: center;
+}
+header .header-left .h2 {
+    width: 140px;
+}
+header .header-left nav {
+    margin-left: 50px;
+}
+header .header-left nav ul {
+    display: flex;
+    align-content: end;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li a {
+    list-style-type: none;
+    display: flex;
+    color: black;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.2s;
+    text-decoration: none;
+    justify-content: space-evenly;
+}
+nav ul li a:hover,
+nav ul li a.active {
+    color: #54B435;
+}
+nav .login {
+    display: none;
+}
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+header .login {
+    color: black;
+    font-weight: bold;
+}
+/*header .login:hover{
+    color: black;
+    background-color: white;
+}*/
+header .login a {
+    display: inline-block;
+    color: white;
+    background: black;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+header .header-right .hamburger {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+header .header-right .hamburger div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: black;
+}
+@media only screen and (max-width: 1000px) {
+    header {
+        padding: 0 20px;
+    }
+    header .header-right .hamburger {
+        display: block;
+    }
+    header .header-left nav {
+        margin: 0;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: black;
+        padding: 30px;
+        transition: 0.3s;
+        text-align: center;
+        z-index: -1;
+    }
+    header .header-left nav.active {
+        top: 70px;
+    }
+    header .header-left nav ul {
+        display: block;
+    }
+}
+@media only screen and (max-width: 500px) {
+    nav .login {
+        display: block;
+        margin-top: 20px;
+    }
+    header .header-right .login {
+        display: none;
+    }
+
+}
+.link:hover{
+ font-size: 17px;
+}
+
+
+.text{
+ padding-left: 10%;
+ margin-top: 10%; 
+ float: left;
+}
+/*
+.btn{
+    background-color: transparent;
+    outline-style: none;
+}
+.btn:hover{
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+}*/
+h4:hover{
+    font-size: 30px;
+    transition: 0.5s;
+}   
+
+
+.carousel {
+    display:inline-flex;
+    margin-left: 10%;
+    margin-top: 3%;
+    width: 30%;
+    height: 550px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+  
+  .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .carousel-image.active {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* Media Query for Small Screens */
+  @media only screen and (max-width: 600px) {
+    .carousel {
+      height: 200px;
+    }
+  }
+  
+  /* Media Query for Medium Screens */
+  @media only screen and (min-width: 601px) and (max-width: 992px) {
+    .carousel {
+      height: 300px;
+    }
+  }
+  

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Clubs & Activities</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="indexstyles.css">
+        <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Font styles-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <!--<style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+      </style> -->
+    </head>
+    <body>
+        <header>
+            <div class="header-left">
+                <div class="logo">
+                    <h2>Clubs & Activities</h2>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html" class="active">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Clubs</a>
+                        </li>
+                        <li>
+                            <a href="">Volunteer Us</a>
+                        </li>
+                        <li>
+                            <a href="https://www.mvgrce.com/about/about">About</a>
+                        </li>
+                    </ul>
+                    <div class="login">
+                        <a href="login.php">Login</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="login">
+                    <a href="login.php">Login</a>
+                </div> 
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            nav = document.querySelector("nav");
+            hamburger.onclick = function() {
+                nav.classList.toggle("active");
+            }
+        </script>
+
+        <!-- main text container -->
+
+        <div class="container">
+            <h1 class="heading">Together. Forever.</h1>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum. Tincidunt nunc pulvinar sapien et ligula. Sed viverra ipsum nunc aliquet bibendum enim facilisis. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Pulvinar etiam non quam lacus. In tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Adipiscing enim eu turpis egestas pretium. Maecenas accumsan lacus vel facilisis volutpat est velit egestas. Fermentum leo vel orci porta non pulvinar neque laoreet suspendisse. Felis imperdiet proin fermentum leo vel. Donec pretium vulputate sapien nec sagittis aliquam malesuada.Sed id semper risus in hendrerit gravida rutrum quisque. Morbi tristique senectus et netus et. Vitae semper quis lectus nulla at volutpat. Morbi enim nunc faucibus a pellentesque sit amet porttitor eget. Facilisis volutpat est velit egestas dui id ornare. Id consectetur purus ut faucibus pulvinar elementum. Sollicitudin tempor id eu nisl nunc mi ipsum. Nam aliquam sem et tortor consequat. Et malesuada fames ac turpis egestas maecenas. Ipsum suspendisse ultrices gravida dictum fusce ut. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Nisl tincidunt eget nullam non nisi est sit. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Nec ultrices dui sapien eget mi proin sed libero enim. Sodales ut eu sem integer vitae justo eget magna fermentum. Fames ac turpis egestas maecenas pharetra convallis. Erat velit scelerisque in dictum. In eu mi bibendum neque. Tincidunt praesent semper feugiat nibh sed.Magna ac placerat vestibulum lectus mauris ultrices. Porttitor massa id neque aliquam vestibulum morbi blandit. Pellentesque massa placerat duis ultricies. In pellentesque massa placerat duis ultricies lacus sed. Neque convallis a cras semper auctor. Et leo duis ut diam. Ornare suspendisse sed nisi lacus sed. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Posuere ac ut consequat semper. Pellentesque diam volutpat commodo sed. Massa vitae tortor condimentum lacinia quis vel eros. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Neque volutpat ac tincidunt vitae. Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <!-- image carsoule -->    
+
+        <section class="container2">
+            <div class="slide-wrapper">
+                <div class="slider">
+                    <img id="slide-1" src="PHOTOGRAPHY CLUB.png" width="700px" height="400px" alt="photography club image">
+                    <img id="slide-2" src="DANCE CLUB.png" width="700px" height="400px" alt="dance club image">
+                    <img id="slide-3" src="ART CLUB.png" width="700px" height="400px" alt="art club image">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                </div>
+            </div>    
+        </section>  
+
+        <!-- club links with images --> 
+
+        <div class="clubs">
+            <a href="#"><img src="CLUB NAME.png" width="300px" height="180px" alt="club name"></a>
+            <div class="about">
+                <h4>CLUB NAME</h4>
+                <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+            </div>
+        </div>
+        <div class="clubs">
+            <a href="#"><img src="CLUB NAME.png" width="300px" height="180px" alt="club name"></a>
+            <div class="about">
+                <h4>CLUB NAME</h4>
+                <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+            </div>
+        </div>
+        <div class="clubs">
+            <a href="#"><img src="CLUB NAME.png" width="300px" height="180px" alt="club name"></a>
+            <div class="about">
+                <h4>CLUB NAME</h4>
+                <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+            </div>
+        </div>
+        <div class="clubs">
+            <a href="#"><img src="CLUB NAME.png" width="300px" height="180px" alt="club name"></a>
+            <div class="about">
+                <h4>CLUB NAME</h4>
+                <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <footer>
+            <center>
+           <a href="#" class="twitter">Twitter</a> 
+           <a href="#" class="facebook">Facebook</a>
+           <a href="#" class="instagram">Instagram</a>
+            </center><br><br><br>
+           <p class="copyright">© copyrights reserved 2023</p>
+        <footer>
+    </body>
+</html>
