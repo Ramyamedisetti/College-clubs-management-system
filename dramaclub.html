@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CA | Photography</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="dramaclub.css">
+            <!-- Font styles-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <!-- NavBar -->
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <h2>Clubs & Activities</h2>
+            </div>
+            <nav>
+                <ul>
+                    <!--
+                    <li>
+                        <a href="index.html" >Home</a>
+                    </li> 
+                    <li>
+                        <a href="">Clubs</a>
+                    </li>
+                -->
+                    <li>
+                        <a class="link" href="homepage.html"><< Back</a>
+                    </li>
+                    <li>
+                        <a  class="link" href="https://www.mvgrce.com/about/about">More about us</a>
+                    </li>
+                </ul>
+              <div class="login">
+                    <a class="active" href="">Login</a>
+                </div>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="login">
+                <a class="active" href="admin_signin.html">Login</a>
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    <div class="carousel">
+        <img src="DRAMA1.png" class="carousel-image" alt="music club image">
+        <img src="drama2.png" class="carousel-image" alt="dram club image">
+        <img src="drama3.png" class="carousel-image" alt="talent image">
+        <img src="drama4.png" class="carousel-image" alt="photography club image">
+    </div>
+      <script>
+        const carouselImages = document.querySelectorAll(".carousel-image");
+        let currentImageIndex = 0;
+        const maxImageIndex = carouselImages.length - 1;
+        
+        function showNextImage() {
+          const currentImage = carouselImages[currentImageIndex];
+          currentImage.classList.remove("active");
+          currentImageIndex = currentImageIndex === maxImageIndex ? 0 : currentImageIndex + 1;
+          const nextImage = carouselImages[currentImageIndex];
+          nextImage.classList.add("active");
+        }
+        
+        setInterval(showNextImage, 5000);
+        </script>
+    <div class="topcontainer">
+        <br>
+        <h3>#DRAMA CLUB</h3>
+        Drama is a form of storytelling that has been a part of human culture for centuries.
+        From ancient Greek tragedies to modern-day television shows, dramas have the power to captivate
+        audiences and explore the complexities of the human experience.<br>
+        Drama clubs are groups of individuals who share a passion for theater and come together to produce,
+        perform, and appreciate dramatic works. These clubs can be found in schools, community centers,
+        and other organizations and provide an opportunity for people to develop their skills in acting,
+        directing, set design, and more.<br><br>
+        Being a part of a drama club offers numerous benefits. For one, it allows individuals to explore
+        their creative side and express themselves in a safe and supportive environment. Drama,
+        also encourages teamwork and collaboration, as members work together to put on productions and
+        bring their ideas to life.<br><br>
+        Moreover, drama clubs can help boost confidence and public speaking skills. Through acting and performing in front of an audience, individuals can learn to overcome their fears and become more comfortable speaking in front of others.
+
+In addition to these personal benefits, drama clubs also contribute to the broader community by providing entertainment and promoting cultural understanding. By showcasing diverse perspectives and experiences on stage, dramas can foster empathy and dialogue among audience members.
+
+Overall, dramas and drama clubs play an important role in our society by inspiring creativity, promoting personal growth, and bringing people together through the shared experience of theater.
+    </div>

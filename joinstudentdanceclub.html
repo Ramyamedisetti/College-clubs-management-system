@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dance club |MVGRCA</title>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+   <!-- <script src="admin.js"></script> -->
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
+        <!-- css bootstrap -->
+        <link href="joinstudentdanceclub.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>MEMBER</h2>
+        <ul>
+            <li><a href="student.html"><i class="fas fa-home"></i>  HOME</a></li>
+            <li><a href="#"><i class="fas fa-user"></i>  PROFILE</a></li>
+            <li><a href="https://www.mvgrce.com/about/about"><i class="fas fa-address-card"></i>  More info</a></li>
+            <li><a href="volunteerform.html"><i class="fas fa-handshake"></i>  VOLUNTEER US</a></li>
+          <!--  <li><a href="registrationform.html"><i class="fas fa-users"></i> MANAGE CLUB</a></li> -->
+            <li><a href="#"><i class="fas fa-arrow-right-from-bracket"></i>  LOGOUT</a></li>
+        </ul> 
+        <div class="social_media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="main_content">
+        <div class="header"><strong>Dance Club</strong></div>  
+        <div class="info">
+            <div class="about">
+               <h2> #About club</h2><br>
+               We the Dance Club of MVGR College of Engineering, work and give our best in what we do and the amount of work which we put into.
+               We and Our menbers at the club donot only work here but we enjoy and explore ourselves while inspiring others along our journey.
+               We have been actively participating and conducting many activities during the course of time and we are happy to share that we have an own club page now!! 
+               <br><br> so, let us actively participate, learn and share our experiences in this journey of the Dance club. <br>
+               <button class="button"><a class="buttoncolor" href="registrationform.html">JOIN NOW</a></button>
+           </div>
+           <div class="rightcontainer">
+            <h2> #Past Activities</h2><br>
+            We have been actively taking part on various college events & occassions where we have been learning by contributing our work through the course of the events.
+            <br> We have been working together with our members from all the years with talent who led us and will lead the future club members with our atmost efforts.
+            Dance club have been helping out many of its members who are passionate of their skill and eager to nurture their skills.<br><br>  
+           we have participated in <strong>#College Events</strong><br> like flashmobs, fest events, and clutural events. <br>
+           We also had learned and shared experiences through our college <strong>silver jublee</strong> event, <strong>Annual day </strong>events, <strong>Department days</strong>, <strong>Fests</strong> and many more.
+           </div>
+        <div class="carousel">
+            <img src="p1.jpg" class="carousel-image" alt="photography 1">
+            <img src="p2.jpg" class="carousel-image" alt="photography 2">
+            <img src="p3.jpg" class="carousel-image" alt="photography 3">
+            <img src="p4.jpg" class="carousel-image" alt="photography 4">
+        </div>
+          <script>
+            const carouselImages = document.querySelectorAll(".carousel-image");
+            let currentImageIndex = 0;
+            const maxImageIndex = carouselImages.length - 1;
+            
+            function showNextImage() {
+              const currentImage = carouselImages[currentImageIndex];
+              currentImage.classList.remove("active");
+              currentImageIndex = currentImageIndex === maxImageIndex ? 0 : currentImageIndex + 1;
+              const nextImage = carouselImages[currentImageIndex];
+              nextImage.classList.add("active");
+            }
+            
+            setInterval(showNextImage, 5000);
+            </script>
+          <!--  <div class="newupdate">
+                <button id="add" onclick="show_hide()"><i class="fas fa-plus fa-fade"></i>Add a new update</button>
+            </div>
+                <div id="new">
+                <form id="form" method="post">
+                    <input type="text" placeholder="title" class="update"><br><br>
+                    <input type="text" placeholder="date" class="update" ><br><br>
+                    <input type="file" value="choose file" class="choosefile"><br><br>
+                   <select>
+                        <option>choose</option>
+                        <option>first year</option>
+                        <option>second year</option>
+                        <option>third year</option>
+                        <option>fourth year</option>
+                        <option>any</option>
+                    </select> 
+                
+                    <textarea placeholder="Enter text" class="textarea"></textarea><br><br>
+                    <input class="submit" type="button" onclick="window.location.href='#';"  value="submit"  >               
+                </form>
+            </div>
+            <script>
+                const myButton = document.getElementById("add");
+                const myDiv = document.getElementById("new");
+                myButton.onclick = function() {
+                  myDiv.classList.toggle("open");
+                };
+            </script> -->
+    </div>
+</body>
+</html>
